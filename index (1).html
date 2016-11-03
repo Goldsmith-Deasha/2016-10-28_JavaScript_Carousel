@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Owl Carousel Demo</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>Owl Carousel Demo</h1>
+
+
+    <!-- Carousel http://owlgraphic.com/owlcarousel/ -->
+    <div class="owl-carousel">
+      <div class="item"><img src="img/backdrop-jpg.jpeg"></div>
+      <div class="item"><img src="img/beanie-jpg.jpeg"></div>
+      <div class="item"><img src="img/jesussaves-jpg.jpeg"></div>
+      <div class="item"><img src="img/rain-jpg.jpeg"></div>
+      <div class="item"><img src="img/crouch-jpg.jpeg"></div>
+      <div class="item"><img src="img/water-rescue.jpeg"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        autoplay : true,
+        autoplayHoverPause : true,
+        autoplayTimeout : 5000,
+        dots : false,
+        items : 1,
+        loop : true,
+        margin : 10,
+        nav : true
+
+      })
+     })
+    </script>
+  </body>
+</html>
